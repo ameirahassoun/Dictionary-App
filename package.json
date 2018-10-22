@@ -1,0 +1,23 @@
+{
+  "name": "definition-of-english-words",
+  "version": "1.0.0",
+  "description": "A Node.js Express server for React app using Oxford API, the main purpose is to give the definition of any word in English.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameirahassoun/Definition-of-english-words.git"
+  },
+  "author": "Ameira Hassoun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ameirahassoun/Definition-of-english-words/issues"
+  },
+  "homepage": "https://github.com/ameirahassoun/Definition-of-english-words#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
