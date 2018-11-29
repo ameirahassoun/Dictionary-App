@@ -9,12 +9,19 @@ class App extends Component {
     }
   }
 
+  onChange = e => {
+    console.log(e);
+  }
   render() {
     return (
       <div>
         <div className="App">
           <header className="App-header">
             <h2>Dictionary</h2>
+            <input
+            type='text'
+            onChange={e => this.onChange(e.target.value)}
+            />
           </header>
         </div>
       </div>
