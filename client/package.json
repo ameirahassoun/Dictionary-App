@@ -11,10 +11,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch": "npm-watch"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "watch": {
+    "build": "src/"
   },
   "proxy": "http://localhost:5000/",
   "browserslist": [
@@ -22,5 +26,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "npm-watch": "^0.4.0"
+  }
 }
