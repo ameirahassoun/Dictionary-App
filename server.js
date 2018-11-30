@@ -26,7 +26,11 @@ app.get('/*', (req, res) => {
     res.sendFile(path.resolve(path.join(__dirname, './client/build/index.html')))
 });
 
-const port = 3500;
-app.listen(port, () => {
-    console.log(`this is the port : ${port}`)
-});
+const PORT = process.env.PORT || 3000;
+
+if (!module.parent) {
+    app.listen(PORT, () => {
+        console.log(`The Port : ${PORT}`);
+    });
+}
+module.exports = app;
